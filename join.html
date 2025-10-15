@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Join Us - Velora Modeling Agency</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preload" href="fonts/SilkSerif-Light.woff2" as="font" type="font/woff2" crossorigin>
+</head>
+<body class="bg-white text-black">
+    <!-- Navigation (loaded from nav.html) -->
+    <div id="site-nav"></div>
+
+    <!-- Page Hero removed -->
+
+    <!-- Requirements Section -->
+    <section class="py-20 px-6 bg-gray-50">
+        <div class="max-w-5xl mx-auto">
+            <h2 class="text-4xl font-bold mb-12 text-center tracking-tight">What We Look For</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-white p-8 text-center">
+                    <div class="w-16 h-16 bg-black text-white rounded-full flex items-center justify-center mx-auto mb-4 text-2xl font-bold">1</div>
+                    <h3 class="text-xl font-semibold mb-3">Unique Look</h3>
+                    <p class="text-gray-600 text-sm">
+                        We celebrate diversity and individuality. Your distinctive features and personality set you apart.
+                    </p>
+                </div>
+                <div class="bg-white p-8 text-center">
+                    <div class="w-16 h-16 bg-black text-white rounded-full flex items-center justify-center mx-auto mb-4 text-2xl font-bold">2</div>
+                    <h3 class="text-xl font-semibold mb-3">Professionalism</h3>
+                    <p class="text-gray-600 text-sm">
+                        Dedication, reliability, and a strong work ethic are essential in the fashion industry.
+                    </p>
+                </div>
+                <div class="bg-white p-8 text-center">
+                    <div class="w-16 h-16 bg-black text-white rounded-full flex items-center justify-center mx-auto mb-4 text-2xl font-bold">3</div>
+                    <h3 class="text-xl font-semibold mb-3">Passion</h3>
+                    <p class="text-gray-600 text-sm">
+                        A genuine love for modeling and fashion drives success in this competitive field.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Application Form -->
+    <section class="content-section py-20 px-6 bg-white">
+        <div class="max-w-3xl mx-auto">
+            <h2 class="text-4xl font-bold mb-8 text-center tracking-tight">Submit Your Application</h2>
+            <p class="text-center text-gray-600 mb-12">
+                Fill out the form below and upload your photos. Our team will review your application and contact you if we believe you're a good fit for Velora.
+            </p>
+
+            <form class="space-y-6">
+                <!-- Personal Information -->
+                <div class="border-b border-gray-200 pb-8">
+                    <h3 class="text-xl font-semibold mb-6">Personal Information</h3>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <div>
+                            <label class="block text-sm font-medium mb-2">First Name *</label>
+                            <input type="text" class="form-input w-full px-4 py-3 border border-gray-300 focus:outline-none focus:border-black" required>
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium mb-2">Last Name *</label>
+                            <input type="text" class="form-input w-full px-4 py-3 border border-gray-300 focus:outline-none focus:border-black" required>
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium mb-2">Date of Birth *</label>
+                            <input type="date" class="form-input w-full px-4 py-3 border border-gray-300 focus:outline-none focus:border-black" required>
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium mb-2">Gender *</label>
+                            <select class="form-input w-full px-4 py-3 border border-gray-300 focus:outline-none focus:border-black" required>
+                                <option value="">Select</option>
+                                <option value="female">Female</option>
+                                <option value="male">Male</option>
+                                <option value="non-binary">Non-Binary</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium mb-2">Email *</label>
+                            <input type="email" class="form-input w-full px-4 py-3 border border-gray-300 focus:outline-none focus:border-black" required>
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium mb-2">Phone *</label>
+                            <input type="tel" class="form-input w-full px-4 py-3 border border-gray-300 focus:outline-none focus:border-black" required>
+                        </div>
+                        <div class="md:col-span-2">
+                            <label class="block text-sm font-medium mb-2">City & Country *</label>
+                            <input type="text" class="form-input w-full px-4 py-3 border border-gray-300 focus:outline-none focus:border-black" placeholder="e.g., New York, USA" required>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Physical Measurements -->
+                <div class="border-b border-gray-200 pb-8">
+                    <h3 class="text-xl font-semibold mb-6">Physical Measurements</h3>
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                        <div>
+                            <label class="block text-sm font-medium mb-2">Height *</label>
+                            <input type="text" class="form-input w-full px-4 py-3 border border-gray-300 focus:outline-none focus:border-black" placeholder='e.g., 5\'10"' required>
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium mb-2">Bust/Chest *</label>
+                            <input type="text" class="form-input w-full px-4 py-3 border border-gray-300 focus:outline-none focus:border-black" placeholder='e.g., 34"' required>
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium mb-2">Waist *</label>
+                            <input type="text" class="form-input w-full px-4 py-3 border border-gray-300 focus:outline-none focus:border-black" placeholder='e.g., 24"' required>
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium mb-2">Hips *</label>
+                            <input type="text" class="form-input w-full px-4 py-3 border border-gray-300 focus:outline-none focus:border-black" placeholder='e.g., 35"' required>
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium mb-2">Shoe Size *</label>
+                            <input type="text" class="form-input w-full px-4 py-3 border border-gray-300 focus:outline-none focus:border-black" placeholder="e.g., 8 US" required>
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium mb-2">Eye Color *</label>
+                            <input type="text" class="form-input w-full px-4 py-3 border border-gray-300 focus:outline-none focus:border-black" required>
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium mb-2">Hair Color *</label>
+                            <input type="text" class="form-input w-full px-4 py-3 border border-gray-300 focus:outline-none focus:border-black" required>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Experience -->
+                <div class="border-b border-gray-200 pb-8">
+                    <h3 class="text-xl font-semibold mb-6">Experience</h3>
+                    <div class="space-y-6">
+                        <div>
+                            <label class="block text-sm font-medium mb-2">Modeling Experience *</label>
+                            <select class="form-input w-full px-4 py-3 border border-gray-300 focus:outline-none focus:border-black" required>
+                                <option value="">Select</option>
+                                <option value="none">No Experience</option>
+                                <option value="beginner">Beginner (0-1 years)</option>
+                                <option value="intermediate">Intermediate (1-3 years)</option>
+                                <option value="experienced">Experienced (3+ years)</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium mb-2">Previous Work (Optional)</label>
+                            <textarea rows="4" class="form-input w-full px-4 py-3 border border-gray-300 focus:outline-none focus:border-black" placeholder="List any previous modeling work, campaigns, or shows you've participated in..."></textarea>
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium mb-2">Social Media Links (Optional)</label>
+                            <input type="url" class="form-input w-full px-4 py-3 border border-gray-300 focus:outline-none focus:border-black mb-3" placeholder="Instagram URL">
+                            <input type="url" class="form-input w-full px-4 py-3 border border-gray-300 focus:outline-none focus:border-black" placeholder="Other Portfolio URL">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Photo Upload -->
+                <div class="pb-8">
+                    <h3 class="text-xl font-semibold mb-6">Photos *</h3>
+                    <div class="bg-gray-50 border-2 border-dashed border-gray-300 rounded p-8 text-center">
+                        <svg class="w-12 h-12 mx-auto mb-4 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 16a4 4 0 01-.88-7.903A5 5 0 1115.9 6L16 6a5 5 0 011 9.9M15 13l-3-3m0 0l-3 3m3-3v12"></path>
+                        </svg>
+                        <p class="text-sm text-gray-600 mb-2">Upload at least 3 photos (full body, headshot, profile)</p>
+                        <p class="text-xs text-gray-500 mb-4">Accepted formats: JPG, PNG (Max 5MB each)</p>
+                        <input type="file" multiple accept="image/*" class="hidden" id="file-upload">
+                        <label for="file-upload" class="inline-block bg-black text-white px-6 py-2 text-sm font-semibold hover:bg-gray-800 transition cursor-pointer">
+                            SELECT FILES
+                        </label>
+                    </div>
+                </div>
+
+                <!-- Additional Comments -->
+                <div class="pb-8">
+                    <label class="block text-sm font-medium mb-2">Additional Comments</label>
+                    <textarea rows="4" class="form-input w-full px-4 py-3 border border-gray-300 focus:outline-none focus:border-black" placeholder="Tell us why you want to join Velora..."></textarea>
+                </div>
+
+                <!-- Terms -->
+                <div class="flex items-start mb-6">
+                    <input type="checkbox" class="mt-1 mr-3" required>
+                    <label class="text-sm text-gray-600">
+                        I confirm that all information provided is accurate and I agree to Velora's terms and conditions. I understand that submitting this application does not guarantee representation.
+                    </label>
+                </div>
+
+                <!-- Submit Button -->
+                <button type="submit" class="w-full bg-black text-white px-8 py-4 text-sm font-semibold hover:bg-gray-800 transition tracking-wide">
+                    SUBMIT APPLICATION
+                </button>
+            </form>
+        </div>
+    </section>
+
+    <!-- FAQ section removed -->
+
+    <!-- Footer (minimal like IMG) -->
+    <footer class="footer-minimal py-16 px-8">
+        <div class="w-full">
+            <div class="footer-columns">
+                <ul class="footer-col">
+                    <li><a class="footer-link" href="about.html">ABOUT US</a></li>
+                    <li><a class="footer-link" href="contact.html">CONTACT</a></li>
+                    <li><a class="footer-link" href="join.html">JOIN US</a></li>
+                    <li><a class="footer-link" href="models.html">MODELS</a></li>
+                </ul>
+
+                <ul class="footer-col footer-col-right">
+                    <li><a class="footer-link" href="#">INSTAGRAM</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <script src="include-nav.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

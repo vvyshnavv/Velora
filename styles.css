@@ -1,0 +1,314 @@
+* {
+    font-family: 'Inter', sans-serif;
+}
+
+/* Silk Serif Light - self-hosted fallback. Place font files in /fonts/ */
+@font-face {
+    font-family: 'SilkSerifLight';
+    src: url('fonts/SilkSerif-Light.woff2') format('woff2'),
+         url('fonts/SilkSerif-Light.woff') format('woff');
+    /* fallback to the TTF you added */
+    src: url('fonts/SilkSerif-TRIAL-Light-BF6740066e4d5cb.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+.hero-bg {
+    background: linear-gradient(45deg, #000 0%, #222 50%, #000 100%);
+    background-size: 400% 400%;
+    animation: gradientShift 15s ease infinite;
+}
+
+@keyframes gradientShift {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+.model-overlay {
+    background: radial-gradient(circle at center, transparent 0%, rgba(0,0,0,0.7) 100%);
+}
+
+.nav-sticky {
+    transition: all 0.3s ease;
+}
+
+.nav-sticky.scrolled {
+    background: rgba(0, 0, 0, 0.95);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Header layout for centered logo with left/right groups */
+.nav-left, .nav-right {
+    color: rgba(255,255,255,0.95);
+}
+
+.nav-logo .logo-text {
+    color: #fff;
+    font-family: 'SilkSerifLight', 'Playfair Display', serif; /* prefer SilkSerifLight */
+    font-weight: 500; /* thinner */
+    letter-spacing: 0.05em;
+    font-size: 1.5rem; /* slightly smaller for a thinner bar */
+    text-decoration: none;
+    display: inline-block;
+    padding: 2px 0; /* slimmer top/bottom */
+    background: transparent;
+}
+
+.nav-sticky {
+    background: transparent;
+}
+
+.nav-sticky.scrolled .logo-text {
+    color: #fff;
+}
+
+.nav-link {
+    color: rgba(255,255,255,0.9);
+    text-decoration: none;
+    font-weight: 70; /* even thinner */
+    letter-spacing: 0.06em;
+}
+
+.nav-sticky.scrolled .nav-link,
+.nav-sticky.scrolled .search-btn svg {
+    color: rgba(255,255,255,0.9);
+}
+
+.nav-link:hover {
+    opacity: 0.9;
+}
+
+.search-btn {
+    background: transparent;
+    border: 0;
+    color: rgba(0,0,0,0.7);
+}
+
+/* Search field similar to IMG Models */
+.nav-search {
+    position: relative;
+}
+
+.nav-search-input {
+    background: transparent;
+    color: white;
+    border: 1px solid rgba(255,255,255,0.3);
+    padding: 4px 28px 4px 10px; /* slimmer */
+    font-size: 0.8rem;
+    letter-spacing: 0.08em;
+    outline: none;
+    width: 300px; /* stretch more to the right */
+}
+
+.nav-search-input::placeholder {
+    color: rgba(255,255,255,0.75);
+}
+
+.nav-search-icon {
+    position: absolute;
+    right: 8px;
+    width: 16px;
+    height: 16px;
+    color: rgba(255,255,255,0.9);
+}
+
+/* make the nav over hero slightly translucent when scrolled */
+.nav-sticky.scrolled {
+    background: rgba(0,0,0,0.7);
+}
+
+.model-card {
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.model-card:hover {
+    transform: translateY(-8px);
+}
+
+.model-card img {
+    transition: all 0.6s ease;
+}
+
+.model-card:hover img {
+    transform: scale(1.05);
+}
+
+.btn-primary {
+    transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+    transform: translateX(4px);
+}
+
+.hero-text {
+    animation: fadeInUp 1.2s ease-out;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.floating-element {
+    animation: float 6s ease-in-out infinite;
+}
+
+@keyframes float {
+    0%, 100% { transform: translateY(0px); }
+    50% { transform: translateY(-20px); }
+}
+
+.link-hover {
+    position: relative;
+}
+
+.link-hover::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: -4px;
+    left: 0;
+    background-color: white;
+    transition: width 0.3s ease;
+}
+
+.link-hover:hover::after {
+    width: 100%;
+}
+
+/* Footer: minimalist, centered groups with subtle separators */
+footer {
+    background: #fff;
+    color: #111;
+}
+
+footer .max-w-7xl {
+    max-width: 1100px;
+}
+
+footer h3 {
+    color: #111;
+}
+
+footer p, footer a, footer li {
+    color: rgba(0,0,0,0.65);
+}
+
+footer a:hover {
+    color: rgba(0,0,0,0.95);
+}
+
+.footer-grid {
+    display: flex;
+    gap: 32px;
+    flex-wrap: wrap;
+}
+
+.footer-bottom {
+    border-top: 1px solid #eee;
+    padding-top: 24px;
+    margin-top: 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 16px;
+}
+
+/* Minimal IMG-like footer */
+.footer-minimal {
+    background: #fff;
+}
+
+.footer-columns {
+    display: grid;
+    /* narrower columns and center the grid so the two blocks move inward */
+    grid-template-columns: minmax(220px, 360px) minmax(140px, 240px);
+    gap: 200px;
+    align-items: start;
+    justify-content: center;
+    max-width: 920px;
+    margin: 0 auto;
+}
+
+.footer-col {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-link {
+    display: block;
+    text-decoration: none;
+    color: #0f172a; /* near-black */
+    font-size: 12px;
+    line-height: 2.2;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    font-weight: 300;
+}
+
+.footer-link:hover { opacity: 0.7; }
+
+.footer-note {
+    color: #9aa3af; /* muted gray */
+    font-size: 12px;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    margin-top: 8px;
+}
+
+@media (max-width: 900px) {
+    .footer-columns { grid-template-columns: 1fr; gap: 24px; }
+    .footer-col-right { justify-self: start; }
+}
+
+/* Align right column slightly inward (toward center) */
+.footer-col-right { justify-self: start; }
+
+/* Add a bit more horizontal breathing room */
+.footer-minimal { padding-left: 40px; padding-right: 40px; }
+
+@media (max-width: 768px) {
+    .nav-left { display: none; }
+    .nav-right .nav-link.hidden\:md\:inline { display: none; }
+    .nav-search { display: none; }
+    .nav-logo { position: static; transform: none; }
+    .nav-logo .logo-text { font-size: 1.25rem; }
+    .nav-sticky { padding: 8px 12px; }
+    footer .grid { grid-template-columns: 1fr; }
+}
+
+
+/* Page-specific styles */
+.page-hero {
+    background: linear-gradient(135deg, #000 0%, #1a1a1a 50%, #000 100%);
+    min-height: 50vh;
+}
+
+.content-section {
+    min-height: 60vh;
+}
+
+.form-input {
+    transition: all 0.3s ease;
+}
+
+.form-input:focus {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}

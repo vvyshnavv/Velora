@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ALPHA - High Fashion Modeling Agency</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preload" href="fonts/SilkSerif-Light.woff2" as="font" type="font/woff2" crossorigin>
+</head>
+<body class="bg-white text-black">
+    <!-- Navigation -->
+        <!-- Navigation (loaded from nav.html) -->
+        <div id="site-nav"></div>
+
+    <!-- Hero Section -->
+    <section class="hero-bg relative h-screen flex items-center justify-center overflow-hidden">
+        <div class="model-overlay absolute inset-0"></div>
+        
+        <!-- Floating geometric shapes -->
+        <div class="absolute top-20 left-10 w-32 h-32 border border-white opacity-20 floating-element"></div>
+        <div class="absolute bottom-32 right-20 w-24 h-24 border border-white opacity-10 floating-element" style="animation-delay: 2s;"></div>
+        
+        <div class="relative z-10 text-center text-white px-4 hero-text">
+            <h1 class="text-6xl md:text-8xl font-bold tracking-tight mb-6">
+                REDEFINING<br/>ELEGANCE
+            </h1>
+            <p class="text-xl md:text-2xl font-light tracking-wide mb-8 opacity-90">
+                Where Fashion Meets Artistry
+            </p>
+            <!-- CTA removed as requested -->
+        </div>
+
+        <!-- Scroll Indicator -->
+        <div class="absolute bottom-8 left-1/2 transform -translate-x-1/2 text-white opacity-60 animate-bounce">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
+            </svg>
+        </div>
+    </section>
+
+    <!-- Featured Models Section -->
+    <section class="py-20 px-6 bg-white">
+        <div class="max-w-7xl mx-auto">
+            <h2 class="text-5xl font-bold text-center mb-16 tracking-tight">FEATURED</h2>
+            
+            <!-- Models Grid -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6">
+                <!-- Model Card 1 -->
+                <div class="model-card group cursor-pointer">
+                    <div class="overflow-hidden bg-gray-100 aspect-[3/4] mb-4">
+                        <img src="https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e?w=400&h=600&fit=crop" alt="Model" class="w-full h-full object-cover">
+                    </div>
+                    <div class="space-y-1">
+                        <p class="text-xs text-gray-500 uppercase tracking-wide">Campaign</p>
+                        <h3 class="font-semibold text-sm">SOPHIA WILLIAMS</h3>
+                        <p class="text-xs text-gray-600">for ZARA</p>
+                        <a href="#" class="inline-block text-xs font-medium mt-2 hover:underline">Book This Model →</a>
+                    </div>
+                </div>
+
+                <!-- Model Card 2 -->
+                <div class="model-card group cursor-pointer">
+                    <div class="overflow-hidden bg-gray-100 aspect-[3/4] mb-4">
+                        <img src="https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?w=400&h=600&fit=crop" alt="Model" class="w-full h-full object-cover">
+                    </div>
+                    <div class="space-y-1">
+                        <p class="text-xs text-gray-500 uppercase tracking-wide">Editorial</p>
+                        <h3 class="font-semibold text-sm">EMMA CHEN</h3>
+                        <p class="text-xs text-gray-600">for VOGUE</p>
+                        <a href="#" class="inline-block text-xs font-medium mt-2 hover:underline">Book This Model →</a>
+                    </div>
+                </div>
+
+                <!-- Model Card 3 -->
+                <div class="model-card group cursor-pointer">
+                    <div class="overflow-hidden bg-gray-100 aspect-[3/4] mb-4">
+                        <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=400&h=600&fit=crop" alt="Model" class="w-full h-full object-cover">
+                    </div>
+                    <div class="space-y-1">
+                        <p class="text-xs text-gray-500 uppercase tracking-wide">Runway</p>
+                        <h3 class="font-semibold text-sm">ISABELLA RODRIGUEZ</h3>
+                        <p class="text-xs text-gray-600">for DIOR</p>
+                        <a href="#" class="inline-block text-xs font-medium mt-2 hover:underline">Book This Model →</a>
+                    </div>
+                </div>
+
+                <!-- Model Card 4 -->
+                <div class="model-card group cursor-pointer">
+                    <div class="overflow-hidden bg-gray-100 aspect-[3/4] mb-4">
+                        <img src="https://images.unsplash.com/photo-1488426862026-3ee34a7d66df?w=400&h=600&fit=crop" alt="Model" class="w-full h-full object-cover">
+                    </div>
+                    <div class="space-y-1">
+                        <p class="text-xs text-gray-500 uppercase tracking-wide">Campaign</p>
+                        <h3 class="font-semibold text-sm">OLIVIA ANDERSON</h3>
+                        <p class="text-xs text-gray-600">for H&M</p>
+                        <a href="#" class="inline-block text-xs font-medium mt-2 hover:underline">Book This Model →</a>
+                    </div>
+                </div>
+
+                <!-- Model Card 5 -->
+                <div class="model-card group cursor-pointer">
+                    <div class="overflow-hidden bg-gray-100 aspect-[3/4] mb-4">
+                        <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=400&h=600&fit=crop" alt="Model" class="w-full h-full object-cover">
+                    </div>
+                    <div class="space-y-1">
+                        <p class="text-xs text-gray-500 uppercase tracking-wide">Editorial</p>
+                        <h3 class="font-semibold text-sm">AVA MARTINEZ</h3>
+                        <p class="text-xs text-gray-600">for ELLE</p>
+                        <a href="#" class="inline-block text-xs font-medium mt-2 hover:underline">Book This Model →</a>
+                    </div>
+                </div>
+
+                <!-- Model Card 6 -->
+                <div class="model-card group cursor-pointer">
+                    <div class="overflow-hidden bg-gray-100 aspect-[3/4] mb-4">
+                        <img src="https://images.unsplash.com/photo-1531746020798-e6953c6e8e04?w=400&h=600&fit=crop" alt="Model" class="w-full h-full object-cover">
+                    </div>
+                    <div class="space-y-1">
+                        <p class="text-xs text-gray-500 uppercase tracking-wide">Runway</p>
+                        <h3 class="font-semibold text-sm">MIA THOMPSON</h3>
+                        <p class="text-xs text-gray-600">for CHANEL</p>
+                        <a href="#" class="inline-block text-xs font-medium mt-2 hover:underline">Book This Model →</a>
+                    </div>
+                </div>
+
+                <!-- Model Card 7 -->
+                <div class="model-card group cursor-pointer">
+                    <div class="overflow-hidden bg-gray-100 aspect-[3/4] mb-4">
+                        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=600&fit=crop" alt="Model" class="w-full h-full object-cover grayscale">
+                    </div>
+                    <div class="space-y-1">
+                        <p class="text-xs text-gray-500 uppercase tracking-wide">Campaign</p>
+                        <h3 class="font-semibold text-sm">LUCAS TAYLOR</h3>
+                        <p class="text-xs text-gray-600">for ARMANI</p>
+                        <a href="#" class="inline-block text-xs font-medium mt-2 hover:underline">Book This Model →</a>
+                    </div>
+                </div>
+
+                <!-- Model Card 8 -->
+                <div class="model-card group cursor-pointer">
+                    <div class="overflow-hidden bg-gray-100 aspect-[3/4] mb-4">
+                        <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=400&h=600&fit=crop" alt="Model" class="w-full h-full object-cover">
+                    </div>
+                    <div class="space-y-1">
+                        <p class="text-xs text-gray-500 uppercase tracking-wide">Editorial</p>
+                        <h3 class="font-semibold text-sm">CHARLOTTE DAVIS</h3>
+                        <p class="text-xs text-gray-600">for HARPER'S BAZAAR</p>
+                        <a href="#" class="inline-block text-xs font-medium mt-2 hover:underline">Book This Model →</a>
+                    </div>
+                </div>
+
+                <!-- Model Card 9 -->
+                <div class="model-card group cursor-pointer">
+                    <div class="overflow-hidden bg-gray-100 aspect-[3/4] mb-4">
+                        <img src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=400&h=600&fit=crop" alt="Model" class="w-full h-full object-cover grayscale">
+                    </div>
+                    <div class="space-y-1">
+                        <p class="text-xs text-gray-500 uppercase tracking-wide">Runway</p>
+                        <h3 class="font-semibold text-sm">ETHAN WILSON</h3>
+                        <p class="text-xs text-gray-600">for PRADA</p>
+                        <a href="#" class="inline-block text-xs font-medium mt-2 hover:underline">Book This Model →</a>
+                    </div>
+                </div>
+
+                <!-- Model Card 10 -->
+                <div class="model-card group cursor-pointer">
+                    <div class="overflow-hidden bg-gray-100 aspect-[3/4] mb-4">
+                        <img src="https://images.unsplash.com/photo-1517841905240-472988babdf9?w=400&h=600&fit=crop" alt="Model" class="w-full h-full object-cover">
+                    </div>
+                    <div class="space-y-1">
+                        <p class="text-xs text-gray-500 uppercase tracking-wide">Campaign</p>
+                        <h3 class="font-semibold text-sm">AMELIA BROWN</h3>
+                        <p class="text-xs text-gray-600">for GUCCI</p>
+                        <a href="#" class="inline-block text-xs font-medium mt-2 hover:underline">Book This Model →</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer (minimal like IMG) -->
+    <footer class="footer-minimal py-16 px-8">
+        <div class="w-full">
+            <div class="footer-columns">
+                <!-- Left column -->
+                <ul class="footer-col">
+                    <li><a class="footer-link" href="about.html">ABOUT US</a></li>
+                    <li><a class="footer-link" href="contact.html">CONTACT</a></li>
+                    <li><a class="footer-link" href="join.html">JOIN US</a></li>
+                    <li><a class="footer-link" href="models.html">MODELS</a></li>
+                </ul>
+
+                <!-- Right column -->
+                <ul class="footer-col footer-col-right">
+                    <li><a class="footer-link" href="#">INSTAGRAM</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <script src="include-nav.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
